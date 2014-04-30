@@ -38,7 +38,7 @@ body {
   .contact {
     border: 1px solid #fff;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     transition: background-color .6s ease, margin-top 1s ease, color 1s ease, border 1s ease;
     z-index: 1000;
   }
@@ -55,7 +55,6 @@ body {
     border: 1px solid #8A548A;
     background-color: #8A548A;
     margin-top: -16rem;
-    color: #fff;
   }
   
   .contact:hover .contact-points,

@@ -1,11 +1,11 @@
 body {
   background: #50E3C2;
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 1.4444rem;
-  font-family: "Proxima Nova";
+  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 h1,
@@ -53,7 +53,7 @@ a:active {
 
 .pitch strong,
 .pitch h1 {
-  font-family: "Hernandez-Bold";
+  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: normal;
   color: #8A548A;
   font-size: 1.8889rem;
@@ -94,7 +94,7 @@ a:active {
 }
 
 .contact h2 {
-  font-family: 'Hernandez-Bold';
+  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 1.8889rem;
 }
 
@@ -151,7 +151,7 @@ input[type='text'],
 input[type='email'] {
   border: 0;
   background: rgba(255, 255, 255, .25);
-  font-family: 'Proxima Nova';
+  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 1rem;
   padding: .5rem 2%;
   width: 96%;
@@ -183,7 +183,7 @@ input[type='checkbox']:checked + label span {
 
 input[type=submit] {
   border: 1px solid #fff;
-  font-family: "Proxima Nova";
+  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: bold;
   font-size: 1.5rem;
   padding: .5rem 1rem;
