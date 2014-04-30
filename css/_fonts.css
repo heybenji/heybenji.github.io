@@ -37,10 +37,10 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2ac98a");
   
-@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: italic;src: url('webfonts/2AC98A_0_0.eot');src: url('webfonts/2AC98A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2AC98A_0_0.woff') format('woff'),url('webfonts/2AC98A_0_0.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: italic;src: url('../fonts/2AC98A_0_0.eot');src: url('../fonts/2AC98A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_0_0.woff') format('woff'),url('../fonts/2AC98A_0_0.ttf') format('truetype');}
   
-@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: normal;src: url('webfonts/2AC98A_1_0.eot');src: url('webfonts/2AC98A_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2AC98A_1_0.woff') format('woff'),url('webfonts/2AC98A_1_0.ttf') format('truetype');}
+@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: normal;src: url('../fonts/2AC98A_1_0.eot');src: url('../fonts/2AC98A_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_1_0.woff') format('woff'),url('../fonts/2AC98A_1_0.ttf') format('truetype');}
   
-@font-face {font-family: 'ProximaNova';font-weight: bold;font-style: normal;src: url('webfonts/2AC98A_2_0.eot');src: url('webfonts/2AC98A_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2AC98A_2_0.woff') format('woff'),url('webfonts/2AC98A_2_0.ttf') format('truetype');} 
+@font-face {font-family: 'ProximaNova';font-weight: bold;font-style: normal;src: url('../fonts/2AC98A_2_0.eot');src: url('../fonts/2AC98A_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_2_0.woff') format('woff'),url('../fonts/2AC98A_2_0.ttf') format('truetype');} 
   
-@font-face {font-family: 'Hernandez-Bold';src: url('webfonts/2AC98A_3_0.eot');src: url('webfonts/2AC98A_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2AC98A_3_0.woff') format('woff'),url('webfonts/2AC98A_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Hernandez-Bold';src: url('../fonts/2AC98A_3_0.eot');src: url('../fonts/2AC98A_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_3_0.woff') format('woff'),url('../fonts/2AC98A_3_0.ttf') format('truetype');}
