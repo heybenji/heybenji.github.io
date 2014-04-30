@@ -1,4 +1,4 @@
-heybenji.github.io
+heybenji.co
 ==================
 
-Website for heybenji.co
+Website for Benji Mauer at heybenji.co.
