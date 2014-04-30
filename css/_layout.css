@@ -1,0 +1,130 @@
+body {
+  padding-bottom: 4rem;
+}
+
+.pitch {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pitch,
+.contact {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.contact {
+  padding: 1rem;
+}
+
+
+/* Wider than a phone 
+------------------------------------------------- */
+@media screen and (min-width: 40rem) {
+
+  .pitch,
+  .contact {
+    position: relative;
+    width: 80%;
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .pitch {
+    z-index: 1;
+  }
+  
+  .contact {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .6s ease, margin-top 1s ease, color 1s ease, border 1s ease;
+    z-index: 1000;
+  }
+
+  .contact-points {
+    overflow: hidden;
+    height: 1px;
+    opacity: 0;
+    transition: height 1s ease, opacity 1s ease;
+  }
+  
+  .contact:hover,
+  .contact:focus {
+    border: 1px solid #8A548A;
+    background-color: #8A548A;
+    margin-top: -16rem;
+    color: #fff;
+  }
+  
+  .contact:hover .contact-points,
+  .contact:focus .contact-points {
+    height: 16rem;
+    opacity: 1;
+  }
+  
+  .contact-points-section {
+    float: left;
+  }
+
+  .contact-points-signup {
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  .contact-points-info {
+    width: 48%;
+    margin-left: 2%;
+  }
+  
+  .contact-points-info p:first-child {
+    margin-top: .5rem;
+  }
+  
+  /* MailChimp form-specific layout */
+  .mc-email {
+    width: 100%;
+  }
+
+  .mc-fname,
+  .mc-lname {
+    float: left;
+  }
+
+  .mc-fname {
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .mc-fname input[type=text],
+  .mc-lname input[type=text] {
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .mc-lname {
+    width: 49%;
+  }
+
+  .mc-loc {
+    clear: both;
+  }
+}
+
+/* Taller and wider than a phone
+------------------------------------------------- */
+@media screen and (min-width: 40rem) and (min-height: 40rem) {
+  .pitch {
+    margin-top: 7rem;
+  }
+}
+
+/* Taller than a small laptop
+------------------------------------------------- */
+@media screen and (min-width: 40rem) and (min-height: 50rem) {
+  .pitch {
+    margin-top: 12rem;
+  }
+}

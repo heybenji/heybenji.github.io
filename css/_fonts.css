@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2797966, 2014-04-20T12:30:17-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Hernandez Bold by Sudtipos
+ * URL: http://www.myfonts.com/fonts/sudtipos/hernandez/bold/
+ * Copyright: Copyright (c) 2010 Distributed by Sudtipos. Designed by Daniel Hern&#x0087;ndez. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2797966
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2ab18e");
+ 
+@font-face {font-family: 'Hernandez-Bold';src: url('webfonts/2AB18E_0_0.eot');src: url('../fonts/2AB18E_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AB18E_0_0.woff') format('woff'),url('../fonts/2AB18E_0_0.ttf') format('truetype');}
+ 

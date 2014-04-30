@@ -1,0 +1,17 @@
+/* MailChimp 
+------------------------------------------------- */
+
+.mc-field-group {
+  margin-bottom: .5rem;
+}
+
+.mc-email label,
+.mc-fname label,
+.mc-lname label,
+.mc-loc strong { 
+  position: absolute; /* visually hidden: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
