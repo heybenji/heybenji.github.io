@@ -39,7 +39,8 @@ a:active {
 ------------------------------------------------- */
 
 .pitch {
-  line-height: 2.5556rem;
+  font-size: 1.25em;
+  line-height: 1.5em;
 }
 
 .pitch h1,  
@@ -47,16 +48,12 @@ a:active {
   display: inline; /* so they run together */
 }
 
-.pitch p {
-  font-size: 1.5rem;
-}
-
 .pitch strong,
 .pitch h1 {
   font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: normal;
   color: #8A548A;
-  font-size: 1.8889rem;
+  font-size: 1.25em;
 }
 
 .pitch h1 {
@@ -73,6 +70,8 @@ a:active {
 }
 
 .contact h2 {
+  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 1.5625em;
   margin-bottom: 0;
 }
 
@@ -86,16 +85,11 @@ a:active {
 
 .contact-points .contact-email,
 .contact-points .contact-phone {
-  font-size: 1.5rem;
+  font-size: 1.25em;
 }
 
 .contact-points a {
   color: #fff;
-}
-
-.contact h2 {
-  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 1.8889rem;
 }
 
 /* Social icons */
