@@ -29,8 +29,30 @@ h4 {
   margin-bottom: 1rem;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
 p {
   margin-bottom: 1rem;
+}
+
+th {
+  text-align: left;
+}
+
+td, th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+th {
+  border-bottom: 3px solid fade-out($black, 0.9);
+}
+
+td {
+  border-top: 1px solid fade-out($black, 0.9);
 }
 
 %styled-list {
@@ -96,7 +118,7 @@ a:active {
   color: transparentize($black, .4);
 }
 
-.pitch h1,  
+.pitch h1,
 .pitch p {
   display: inline; /* so they run together */
 }
@@ -208,7 +230,11 @@ a:active {
     @extend %styled-list;
     list-style: decimal;
   }
-
+  table th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875em;
+  }
 }
 
 .posts {
@@ -221,7 +247,6 @@ a:active {
   .post .post-title {
     margin-bottom: 1rem;
   }
-  
 }
 
 .back-to-posts {
@@ -238,15 +263,15 @@ a:active {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: transparentize($white, .33);  
+   color: transparentize($white, .33);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: transparentize($white, .33);  
+   color: transparentize($white, .33);
 }
 
-:-ms-input-placeholder {  
-   color: transparentize($white, .33);  
+:-ms-input-placeholder {
+   color: transparentize($white, .33);
 }
 
 input[type='text'],
@@ -300,7 +325,7 @@ input[type=submit]:focus {
 }
 
 input[type=submit]:active {
-  background: $white; 
+  background: $white;
   color: #000;
 }
 
@@ -309,8 +334,8 @@ input[type=submit]:active {
 
 .visuallyhidden {
   position: absolute; /* visually hidden: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
 }
