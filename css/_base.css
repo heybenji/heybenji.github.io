@@ -17,17 +17,18 @@ h4 {
 
 p {
   margin-bottom: 1rem;
+  color: rgba(255,255,255,0.85);
 }
 
 a {
-  color: #fff;
+  color: rgba(255,255,255,1);
   text-decoration: none;
-  transition: opacity .3s ease;
+  transition: color .3s ease;
 }
 
 a:hover,
 a:focus {
-  opacity: .5;
+  color: rgba(137,86,137,1);
 }
 
 a:active {
@@ -52,7 +53,7 @@ a:active {
 .pitch h1 {
   font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: normal;
-  color: #8A548A;
+  color: rgba(137,86,137,1);
   font-size: 1.25em;
 }
 
