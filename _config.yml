@@ -1,0 +1,16 @@
+# Site settings
+title: "Hey, I'm Benji"
+email: hey@heybenji.co
+author: Benji Mauer
+description: I do training, support, and user experience design for rad people.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.heybenji.co" # the base hostname & protocol for your site
+twitter_username: heybenji
+github_username:  heybenji
+
+# Build settings
+markdown: kramdown
+
+# Minify CSS
+sass:
+  style: compressed
