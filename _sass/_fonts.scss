@@ -8,20 +8,6 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: Proxima Nova Italic by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
- * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * Licensed pageviews: 1,000,000
- * 
- * Webfont: Proxima Nova Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
- * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * Licensed pageviews: 1,000,000
- * 
- * Webfont: Proxima Nova Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
- * Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * Licensed pageviews: 1,000,000
  * 
  * Webfont: Hernandez Bold by Sudtipos
  * URL: http://www.myfonts.com/fonts/sudtipos/hernandez/bold/
@@ -37,10 +23,6 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/2ac98a");
   
-@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: italic;src: url('../fonts/2AC98A_0_0.eot');src: url('../fonts/2AC98A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_0_0.woff') format('woff'),url('../fonts/2AC98A_0_0.ttf') format('truetype');}
-  
-@font-face {font-family: 'ProximaNova';font-weight: normal;font-style: normal;src: url('../fonts/2AC98A_1_0.eot');src: url('../fonts/2AC98A_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_1_0.woff') format('woff'),url('../fonts/2AC98A_1_0.ttf') format('truetype');}
-  
-@font-face {font-family: 'ProximaNova';font-weight: bold;font-style: normal;src: url('../fonts/2AC98A_2_0.eot');src: url('../fonts/2AC98A_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_2_0.woff') format('woff'),url('../fonts/2AC98A_2_0.ttf') format('truetype');} 
-  
 @font-face {font-family: 'Hernandez-Bold';src: url('../fonts/2AC98A_3_0.eot');src: url('../fonts/2AC98A_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AC98A_3_0.woff') format('woff'),url('../fonts/2AC98A_3_0.ttf') format('truetype');}
+
+@import url('//fonts.googleapis.com/css?family=Sanchez:400italic,400');

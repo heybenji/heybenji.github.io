@@ -1,11 +1,17 @@
+$benji-blue: #50E3C2;
+$benji-blue-dark: darken($benji-blue, 10%);
+$benji-purple: #895689;
+$white: #FCFAFB;
+$black: mix($white, #000, 5%);
+
 body {
-  background: #50E3C2;
-  color: #fff;
+  background: $white;
+  color: transparentize($black, .5);
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.4444rem;
-  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 h1,
@@ -17,18 +23,17 @@ h4 {
 
 p {
   margin-bottom: 1rem;
-  color: rgba(255,255,255,0.85);
 }
 
 a {
-  color: rgba(255,255,255,1);
+  color: transparentize($black, .25);
   text-decoration: none;
   transition: color .3s ease;
 }
 
 a:hover,
 a:focus {
-  color: rgba(137,86,137,1);
+  color: $benji-blue-dark;
 }
 
 a:active {
@@ -40,8 +45,8 @@ a:active {
 ------------------------------------------------- */
 
 .pitch {
-  font-size: 1.1em;
-  line-height: 1.5454em;
+  font-size: 1.125em;
+  line-height: 2em;
 }
 
 .pitch h1,  
@@ -53,7 +58,7 @@ a:active {
 .pitch h1 {
   font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: normal;
-  color: rgba(137,86,137,1);
+  color: $benji-purple;
   font-size: 1.25em;
 }
 
@@ -61,13 +66,17 @@ a:active {
   
 }
 
+.pitch a {
+  border-bottom: 3px solid transparentize($benji-blue, .9);
+}
+
 /* Contact
 ------------------------------------------------- */
 
 .contact {
-  border: 1px solid #8A548A;
-  background-color: #8A548A;
-  color: #fff;
+  border: 1px solid $benji-purple;
+  background-color: $benji-purple;
+  color: $white;
 }
 
 .contact h2 {
@@ -90,7 +99,7 @@ a:active {
 }
 
 .contact-points a {
-  color: #fff;
+  color: $white;
 }
 
 /* Social icons */
@@ -127,30 +136,30 @@ a:active {
 /* style the placeholder text on the form */
 
 ::-webkit-input-placeholder {
-   color: rgba(255, 255, 255, .66);
+   color: transparentize($white, .33);
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, .66);  
+   color: transparentize($white, .33);  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, .66);  
+   color: transparentize($white, .33);  
 }
 
 :-ms-input-placeholder {  
-   color: rgba(255, 255, 255, .66);  
+   color: transparentize($white, .33);  
 }
 
 input[type='text'],
 input[type='email'] {
   border: 0;
-  background: rgba(255, 255, 255, .25);
-  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
+  background: transparentize($white, .75);
+  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 1rem;
   padding: .5rem 2%;
   width: 96%;
-  color: #fff;
+  color: $white;
 }
 
 /* custom checkbox: http://webdesign.tutsplus.com/tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons--webdesign-8953 */
@@ -177,23 +186,23 @@ input[type='checkbox']:checked + label span {
 }
 
 input[type=submit] {
-  border: 1px solid #fff;
-  font-family: 'ProximaNova', 'Helvetica', 'Arial', 'sans-serif';
+  border: 1px solid $white;
+  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: bold;
   font-size: 1.5rem;
   padding: .5rem 1rem;
-  color: #fff;
+  color: $white;
   background: transparent;
   transition: all .2s ease;
 }
 
 input[type=submit]:hover,
 input[type=submit]:focus {
-  background: rgba(255,255,255,0.25);
+  background: transparentize($white, .75);
 }
 
 input[type=submit]:active {
-  background: #fff; 
+  background: $white; 
   color: #000;
 }
 

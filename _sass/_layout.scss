@@ -32,14 +32,13 @@ body {
   }
   
   .pitch {
-    font-size: 1.5em;
+    font-size: 1.3em;
     z-index: 1;
   }
   
   .contact {
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid transparentize($benji-blue, .8);
+    background-color: transparentize($benji-purple, 1);
     transition: background-color .6s ease, margin-top 1s ease, color 1s ease, border 1s ease;
     z-index: 1000;
   }
@@ -57,20 +56,23 @@ body {
   }
 
   .contact h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    color: transparentize($black, .25);
+    transition: color .6s ease;
   }
   
   .contact:hover,
   .contact:focus {
-    border: 1px solid #8A548A;
-    background-color: #8A548A;
+    border: 4px solid $benji-purple;
+    background-color: $benji-purple;
     margin-top: -16rem;
-  }
-  
-  .contact:hover .contact-points,
-  .contact:focus .contact-points {
-    height: 16rem;
-    opacity: 1;
+    h2 {
+      color: $white;
+    }
+    .contact-points {
+      height: 16rem;
+      opacity: 1;
+    }
   }
   
   .contact-points-section {
