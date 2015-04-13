@@ -32,8 +32,13 @@ body {
   }
   
   .pitch {
-    font-size: 1.3em;
+    font-size: 1.25em;
     z-index: 1;
+  }
+  
+  .pitch strong,
+  .pitch h1 {
+    font-size: 1.5em;
   }
   
   .contact {
@@ -56,7 +61,7 @@ body {
   }
 
   .contact h2 {
-    font-size: 1.6em;
+    font-size: 2em;
     color: transparentize($black, .25);
     transition: color .6s ease;
   }
