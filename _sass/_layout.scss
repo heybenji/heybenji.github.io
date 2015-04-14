@@ -174,3 +174,17 @@ body {
   }
 
 }
+
+/* Wider than a medium laptop
+------------------------------------------------- */
+
+@media screen and (min-width: 65rem) {
+  
+  .site-footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+}
