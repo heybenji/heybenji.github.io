@@ -8,7 +8,8 @@ body {
 }
 
 .pitch,
-.contact {
+.contact,
+.post {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -17,18 +18,27 @@ body {
   padding: 1rem;
 }
 
+.site-header {
+  padding: 1rem 1rem 4rem 1rem;
+}
+
 
 /* Wider than a phone 
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) {
 
   .pitch,
-  .contact {
+  .contact,
+  .post {
     position: relative;
     width: 80%;
     max-width: 50rem;
     margin-right: auto;
     margin-left: auto;
+  }
+  
+  .post {
+    max-width: 40rem;
   }
   
   .pitch {

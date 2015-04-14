@@ -4,14 +4,22 @@ $benji-purple: #895689;
 $white: #FCFAFB;
 $black: mix($white, #000, 5%);
 
+%brand-font {
+  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+%body-font {
+  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
+}
+
 body {
   background: $white;
-  color: transparentize($black, .5);
+  color: transparentize($black, .25);
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 1.5rem;
-  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
+  @extend %body-font;
 }
 
 h1,
@@ -31,6 +39,11 @@ a {
   transition: color .3s ease;
 }
 
+em {
+  font-weight: normal;
+  font-style: italic;
+}
+
 a:hover,
 a:focus {
   color: $benji-blue-dark;
@@ -41,12 +54,21 @@ a:active {
   opacity: 1;
 }
 
+/* Branding
+------------------------------------------------- */
+
+.site-title {
+  @extend %brand-font;
+  font-size: 1.5rem;
+}
+
 /* Pitch
 ------------------------------------------------- */
 
 .pitch {
   font-size: 1.125em;
   line-height: 2em;
+  color: transparentize($black, .4);
 }
 
 .pitch h1,  
@@ -56,17 +78,15 @@ a:active {
 
 .pitch strong,
 .pitch h1 {
-  font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
+  @extend %brand-font;
   font-weight: normal;
   color: $benji-purple;
   font-size: 1.25em;
 }
 
-.pitch h1 {
-  
-}
-
-.pitch a {
+.pitch a,
+.post a,
+.site-title {
   border-bottom: 3px solid transparentize($benji-blue, .9);
 }
 
@@ -129,6 +149,28 @@ a:active {
   background-position: 0px -88px;
 }
 
+/* Posts
+------------------------------------------------- */
+
+.post {
+  .post-title {
+    @extend %brand-font;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $benji-purple;
+    margin-bottom: 0;
+  }
+  .post-meta {
+    color: transparentize($black, .6);
+  }
+  a {
+    color: darken($benji-blue, 15%);
+    &:hover,
+    &:focus {
+      color: $benji-blue;
+    }
+  }
+}
 
 /* Forms
 ------------------------------------------------- */
