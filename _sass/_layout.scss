@@ -22,11 +22,20 @@ body {
   padding: 1rem 1rem 4rem 1rem;
 }
 
+.site-footer {
+  padding: 4rem 1rem 0 1rem;
+  text-align: right;
+}
+
 
 /* Wider than a phone 
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) {
-
+  
+  body {
+    padding-bottom: 1rem;
+  }
+  
   .pitch,
   .contact,
   .post {
@@ -56,6 +65,7 @@ body {
     background-color: transparentize($benji-purple, 1);
     transition: background-color .6s ease, margin-top 1s ease, color 1s ease, border 1s ease;
     z-index: 1000;
+    overflow: hidden;
   }
 
   .contact-points {
@@ -85,7 +95,7 @@ body {
       color: $white;
     }
     .contact-points {
-      height: 16rem;
+      height: 16.5rem;
       opacity: 1;
     }
   }
@@ -142,15 +152,25 @@ body {
 /* Taller and wider than a phone
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) and (min-height: 40rem) {
+  
   .pitch {
     margin-top: 7rem;
   }
+
 }
 
 /* Taller than a small laptop
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) and (min-height: 50rem) {
+
   .pitch {
     margin-top: 12rem;
   }
+  
+  .site-footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
 }

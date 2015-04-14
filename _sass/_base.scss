@@ -39,6 +39,10 @@ a {
   transition: color .3s ease;
 }
 
+%fancy-link {
+  border-bottom: 3px solid transparentize($benji-blue, .9);
+}
+
 em {
   font-weight: normal;
   font-style: italic;
@@ -58,8 +62,19 @@ a:active {
 ------------------------------------------------- */
 
 .site-title {
+  @extend %fancy-link;
   @extend %brand-font;
   font-size: 1.5rem;
+}
+
+/* Footer
+------------------------------------------------- */
+
+.site-footer {
+  font-size: .75rem;
+  a {
+    @extend %fancy-link;
+  }
 }
 
 /* Pitch
@@ -84,11 +99,10 @@ a:active {
   font-size: 1.25em;
 }
 
-.pitch a,
-.post a,
-.site-title {
-  border-bottom: 3px solid transparentize($benji-blue, .9);
+.pitch a {
+  @extend %fancy-link;
 }
+
 
 /* Contact
 ------------------------------------------------- */
@@ -122,7 +136,8 @@ a:active {
   color: $white;
 }
 
-/* Social icons */
+/* Social Icons
+------------------------------------------------- */
 
 .social-icon {
   display: inline-block;
@@ -153,6 +168,9 @@ a:active {
 ------------------------------------------------- */
 
 .post {
+  .post-content {
+    margin-top: 1rem;
+  }
   .post-title {
     @extend %brand-font;
     font-size: 2rem;
@@ -164,6 +182,7 @@ a:active {
     color: transparentize($black, .6);
   }
   a {
+    @extend %fancy-link;
     color: darken($benji-blue, 15%);
     &:hover,
     &:focus {
