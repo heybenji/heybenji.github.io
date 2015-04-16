@@ -191,6 +191,23 @@ a:active {
   }
 }
 
+.posts {
+  .post {
+    margin-bottom: 4rem;
+  }
+  .post .post-meta {
+    margin-bottom: 1rem;
+  }
+  .post .post-title {
+    margin-bottom: 1rem;
+  }
+  
+}
+
+.back-to-posts {
+  margin-top: 2rem;
+}
+
 /* Forms
 ------------------------------------------------- */
 

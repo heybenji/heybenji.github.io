@@ -1,7 +1,9 @@
   <footer class="site-footer">
-    {% if page.url == "/index.html" %}    
-    <span class="project-credits"><a href="{{ '/credits/' | prepend: site.baseurl }}">Project Credits</a></span>
-    {% endif %}
+    <nav>
+      {% if page.url == "/index.html" %}    
+      <a href="{{ '/credits/' | prepend: site.baseurl }}">Project Credits</a>
+      {% endif %}
+    </nav>
   </footer>
 
   <script>

@@ -1,30 +1,20 @@
 ---
 layout: post
-title: What do you do? Deep design.
-date:   2015-04-15 23:16:44
+title: Deep design
+date: 2015-04-15 23:16:44
 categories: philosophy
 ---
 
 
-
-
-_What do you do?_ It's a simple enough question on the surface. And there are a lot of simple answers: "I make websites for nonprofits" or "I'm a user experience designer" or "I help run a co-working space focused on art and social justice." These answers have a certain solidity. They give the asker something to grab onto.
-
-But the truth is that, like [Tobias Mayer](http://bizcraft.tumblr.com/post/112742470752/what-do-you-do), I have a really hard time with the question because all those simple answers feel wrong. What I actually do, and what people actually seem to value about my work is... hard to explain.
-
-But I think I've figured it out. Let me try to boil it down.
-
-What I do is complex. On a team I might cycle through half a dozen different roles in order to move it forward: designer, process consultant, facilitator, developer, strategist, visionary, secretary. Because what I do isn't the roles I take, or the things I make. 
+What's that? To me, deep design is radically engaging people in the design of something as well as its context.
 
 It's working with all the people who care about the outcome of a project to cut through the crap and make something awesome.
 
-What I do is deep design.
-
-Deep design doesn't stop at how something looks, how it functions, or even at somebody's "experience" of it. Deep design is not only designing the thing itself, but also transforming its context.
+Deep design doesn't stop at how something looks, how it functions, or even at somebody's "experience" of it. Deep design is not only designing the thing _itself,_ but also transforming its _context_.
 
 There's a lot of talk right now on [LinkedIn](https://www.linkedin.com/pulse/20140602124457-338303448-why-the-most-successful-companies-embrace-design), [Co.Design](http://www.fastcodesign.com/3016247/10-lessons-for-design-driven-success) and the four corners of the Internet about how organizations need to embrace design to maximize "innovation" and "disruption." Your organization needs to be "design-driven." Your organization doesn't just need thinking, it needs "design thinking" whatever the fuck _that_ is. Put designers on every team, and you will have "innovation." Guaranteed. Apple did it and "disrupted" everything. Google's doing it and is getting [patted on the back in Wired](http://www.wired.com/2014/12/google-material-design/). You too can embrace design, "disrupt" something, and "innovate" off into the sunset.
 
-Here's the problem. Really embracing design does not mean a token designer on every team, touching up that brochure, or making your "buy this" or "donate now" button rounder. 
+Here's the problem. Deeply embracing design does not mean putting a token designer on every team, touching up that brochure, or making your "buy this" or "donate now" button rounder. 
 
 Deeply embracing design means questioning everything about your organization, and if necessary changing every cherished structure, department, and job title if they get in the way of doing something great.
 
