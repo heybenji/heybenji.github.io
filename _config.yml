@@ -7,6 +7,16 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.heybenji.co" # the base hostname & protocol for your site
 twitter_username: heybenji
 github_username:  heybenji
+social_image: /images/social/benji-site-image.jpg
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 # Permalinks
 permalink: /posts/:title/

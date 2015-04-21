@@ -3,6 +3,7 @@ layout: post
 title:  What do you do?
 date:   2015-04-12
 categories: philosophy
+social_image: /images/social/benji-what-do-you-do.png
 ---
 
 _"What do you do?"_ It's a simple enough question on the surface. And there are a lot of simple answers: "I make websites for nonprofits" or "I'm a user experience designer" or "I help run a co-working space focused on art and social justice." These answers have a certain solidity. They give the asker something to grab onto. But they don't feel right.

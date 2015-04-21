@@ -3,6 +3,7 @@ layout: post
 title:  "Let’s meet someplace real"
 date:   2015-04-16
 categories: local
+social_image: /images/social/benji-someplace-real.png
 ---
 
 When I left [Quilted](http://quilted.coop), a worker cooperative I co-founded and developed for 9 years, I promised myself I would only work with people within an hour by bike or public transit. I swore off remote work.

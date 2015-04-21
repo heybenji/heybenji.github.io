@@ -8,7 +8,29 @@ categories: philosophy
 
 What's that? To me, deep design is radically engaging people in the design of something as well as its context.
 
+Deep design is radically engaging the people who are affected by a problem in the design of solutions that include the entire context of the problem. as well as the transformation of its context.
+
+Deep design is radically engaging the people who are affected to design solutions that include the entire context of the problem. 
+
+as well as the transformation of its context.
+
+Deep design is the radical notion that in order to solve a problem, you must engage the people most affected by the problem in designing solutions that address the problem itself but also potentially transforming its context.
+
 It's working with all the people who care about the outcome of a project to cut through the crap and make something awesome.
+
+Deep design is the radical notion that sometimes designing a solution to a problem is more about transforming the context of the problem than designing the thing itself.
+
+Deep design is understanding deeply the cause of a problem and designing transformative solutions in collaboration with the people most affected. It can be as simple as involving the staff who are responsible for updating the website in the design of the tool they'll use to update it, to as complex as engaging a diverse public in envisioning a new transportation future for a city. In essence, deep design is participatory design, but with a broader mandate: the solution to a problem might come from transforming or rethinking its entire context.
+
+Deep design is problem-solving through considering and intentionally transforming a problem as well as its context.
+
+Deep design is fundamentally about using our collective intelligence to imagine solutions that go beyond our current definition of a problem.
+
+Deep design is about understanding a problem so deeply that its context becomes fundamentally transformed.
+
+Deep design is diving so far into a problem that you turn it inside out. What is causing the problem? Can the solution address not the problem but the context itself?
+
+Deep design is applying design to both a problem and its context in collaboration with the people who most need a solution.
 
 Deep design doesn't stop at how something looks, how it functions, or even at somebody's "experience" of it. Deep design is not only designing the thing _itself,_ but also transforming its _context_.
 
