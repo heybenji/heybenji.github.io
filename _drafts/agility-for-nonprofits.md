@@ -1,0 +1,1 @@
+See thoughts on your session (reference agility principles)

@@ -1,0 +1,1 @@
+or, when tech is your hammer, everything looks like a nail.
