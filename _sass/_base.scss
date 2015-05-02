@@ -33,11 +33,32 @@ p {
   margin-bottom: 1rem;
 }
 
+%styled-list {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  li {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+}
+
+ul {
+  @extend %styled-list;
+  list-style: disc;
+}
+
+ol {
+  @extend %styled-list;
+  list-style: decimal;
+}
+
+
 a {
   color: transparentize($black, .25);
   text-decoration: none;
   transition: color .3s ease;
 }
+
 
 %fancy-link {
   border-bottom: 3px solid transparentize($benji-blue, .9);
