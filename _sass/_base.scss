@@ -42,17 +42,6 @@ p {
   }
 }
 
-ul {
-  @extend %styled-list;
-  list-style: disc;
-}
-
-ol {
-  @extend %styled-list;
-  list-style: decimal;
-}
-
-
 a {
   color: transparentize($black, .25);
   text-decoration: none;
@@ -210,6 +199,16 @@ a:active {
       color: $benji-blue;
     }
   }
+  ul {
+    @extend %styled-list;
+    list-style: disc;
+  }
+
+  ol {
+    @extend %styled-list;
+    list-style: decimal;
+  }
+
 }
 
 .posts {
