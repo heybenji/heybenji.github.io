@@ -2,6 +2,7 @@
 layout: post
 title: Deep design
 categories: philosophy
+social_image: /images/social/benji-deep-design.png
 ---
 
 I recently [wrote a post]({{ '/posts/what-do-you-do/' | prepend: site.baseurl }}) about my struggle to describe simply an interdisciplinary, participatory design practice. I ended up with two words: _deep design._ In truth, deep design is just design _as it should be,_ but the word "design" is so abused right now that it needs a modifier. Case in point...
