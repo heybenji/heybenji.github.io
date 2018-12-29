@@ -90,12 +90,12 @@ body {
   .contact:focus {
     border: 4px solid $benji-purple;
     background-color: $benji-purple;
-    margin-top: -8rem;
+    margin-top: -6rem;
     h2 {
       color: $white;
     }
     .contact-points {
-      height: 8.5rem;
+      height: 6.5rem;
       opacity: 1;
     }
   }
