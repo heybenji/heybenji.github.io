@@ -28,14 +28,14 @@ body {
 }
 
 
-/* Wider than a phone 
+/* Wider than a phone
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) {
-  
+
   body {
     padding-bottom: 1rem;
   }
-  
+
   .pitch,
   .contact,
   .post {
@@ -45,21 +45,21 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-  
+
   .post {
     max-width: 40rem;
   }
-  
+
   .pitch {
     font-size: 1.25em;
     z-index: 1;
   }
-  
+
   .pitch strong,
   .pitch h1 {
     font-size: 1.5em;
   }
-  
+
   .contact {
     border: 3px solid transparentize($benji-blue, .8);
     background-color: transparentize($benji-purple, 1);
@@ -74,7 +74,7 @@ body {
     opacity: 0;
     transition: height 1s ease, opacity 1s ease;
   }
-  
+
   .contact-points .contact-email,
   .contact-points .contact-phone {
     font-size: 1.25em;
@@ -85,21 +85,21 @@ body {
     color: transparentize($black, .25);
     transition: color .6s ease;
   }
-  
+
   .contact:hover,
   .contact:focus {
     border: 4px solid $benji-purple;
     background-color: $benji-purple;
-    margin-top: -16rem;
+    margin-top: -8rem;
     h2 {
       color: $white;
     }
     .contact-points {
-      height: 16.5rem;
+      height: 8.5rem;
       opacity: 1;
     }
   }
-  
+
   .contact-points-section {
     float: left;
   }
@@ -113,11 +113,11 @@ body {
     width: 48%;
     margin-left: 2%;
   }
-  
+
   .contact-points-info p:first-child {
     margin-top: .5rem;
   }
-  
+
   /* MailChimp form-specific layout */
   .mc-email {
     width: 100%;
@@ -152,7 +152,7 @@ body {
 /* Taller and wider than a phone
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) and (min-height: 40rem) {
-  
+
   .pitch {
     margin-top: 7rem;
   }
@@ -166,7 +166,7 @@ body {
   .pitch {
     margin-top: 12rem;
   }
-  
+
   .site-footer {
     position: fixed;
     right: 0;
@@ -179,7 +179,7 @@ body {
 ------------------------------------------------- */
 
 @media screen and (min-width: 65rem) {
-  
+
   .site-footer {
     position: fixed;
     right: 0;
