@@ -1,15 +1,25 @@
 $benji-blue: #50E3C2;
 $benji-blue-dark: darken($benji-blue, 10%);
+$benji-blue-accessible: #0A745D;
+$benji-blue-accessible-slate: #0A5374;
 $benji-purple: #895689;
 $white: #FCFAFB;
 $black: mix($white, #000, 5%);
+$border-radius: 8px;
+$spacing-unit: 1rem;
 
 %brand-font {
   font-family: 'Hernandez-Bold', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 %body-font {
-  font-family: 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Zilla Slab', 'Sanchez', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+%fancy-image {
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: $border-radius;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -17,8 +27,8 @@ body {
   color: transparentize($black, .25);
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 18px;
+  line-height: 1.8rem;
   @extend %body-font;
 }
 
@@ -27,6 +37,16 @@ h2,
 h3,
 h4 {
   margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+  color: $benji-purple;
+}
+
+h2 {
+  font-size: 1.5rem;
+  @extend %brand-font;
 }
 
 h3 {
@@ -65,19 +85,41 @@ td {
 }
 
 a {
-  color: transparentize($black, .25);
+  color: $benji-blue-accessible;
   text-decoration: none;
   transition: color .3s ease;
-}
-
-
-%fancy-link {
   border-bottom: 3px solid transparentize($benji-blue, .9);
 }
 
 em {
   font-weight: normal;
   font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin-left: 2rem;
+  &::before {
+    content: open-quote;
+    @extend %brand-font;
+    color: $benji-purple;
+  }
+}
+
+figure {
+  margin-bottom: 2rem;
+  img {
+    @extend %fancy-image;
+  }
+}
+
+figcaption {
+  margin-top: .5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 a:hover,
@@ -90,13 +132,19 @@ a:active {
   opacity: 1;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* Branding
 ------------------------------------------------- */
 
 .site-title {
-  @extend %fancy-link;
   @extend %brand-font;
+  color: transparentize($black, .25);
   font-size: 1.5rem;
+  
 }
 
 /* Footer
@@ -104,9 +152,13 @@ a:active {
 
 .site-footer {
   font-size: .75rem;
-  a {
-    @extend %fancy-link;
-  }
+}
+
+/* Home
+------------------------------------------------- */
+
+.home > section {
+  margin-bottom: 4rem;
 }
 
 /* Pitch
@@ -118,21 +170,12 @@ a:active {
   color: transparentize($black, .4);
 }
 
-.pitch h1,
-.pitch p {
-  display: inline; /* so they run together */
-}
-
 .pitch strong,
 .pitch h1 {
   @extend %brand-font;
   font-weight: normal;
   color: $benji-purple;
   font-size: 1.25em;
-}
-
-.pitch a {
-  @extend %fancy-link;
 }
 
 
@@ -200,6 +243,19 @@ a:active {
   background-position: 0px -132px;
 }
 
+/* Thoughts
+------------------------------------------------- */
+
+.posts-widget {
+  .post-title,
+  .post-meta {
+    color: transparentize($black, .6);
+    margin-bottom: 0;
+  }
+
+}
+
+
 /* Posts
 ------------------------------------------------- */
 
@@ -211,20 +267,19 @@ a:active {
     @extend %brand-font;
     font-size: 2rem;
     line-height: 2rem;
-    color: $benji-purple;
     margin-bottom: 0;
   }
+  
+  .post-supertitle {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-size: 0.875rem;
+  }
+  
   .post-meta {
     color: transparentize($black, .6);
   }
-  a {
-    @extend %fancy-link;
-    color: darken($benji-blue, 15%);
-    &:hover,
-    &:focus {
-      color: $benji-blue;
-    }
-  }
+
   ul {
     @extend %styled-list;
     list-style: disc;
@@ -254,8 +309,116 @@ a:active {
 }
 
 .back-to-posts {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
+
+/* Portfolio
+------------------------------------------------- */
+
+.projects {
+  
+  
+}
+
+.project-card {
+  position: relative;
+  
+  a {
+    border-bottom: none;
+  }
+  
+  a::before {
+    content: url("/images/icon-lock-reverse.svg");
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    padding: 4px 8px;
+    background: $benji-blue-accessible;
+    top: 8px;
+    right: 8px;
+    border-radius: 4px;
+    z-index: 10;
+    transition: all ease-in-out 200ms;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:hover::before {
+      transform: translate(-6px, -6px);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+    }
+    
+    a:hover img {
+      transform: translate(-4px, -4px);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.project-thumbnail {
+  @extend %fancy-image;
+  transition: all ease-in-out 200ms;
+  z-index: 5;
+}
+
+.project-featured-image {
+  @extend %fancy-image;
+}
+
+.post.project {
+  
+  .post-title {
+    margin-bottom: 2rem;
+  }
+  
+  section h2 {
+    color: $benji-purple;
+  }
+  
+  section {
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+  }
+  
+  .project-summary {
+    ol, ul {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
+.image-gallery {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.image-gallery.fancy li {
+  @for $i from 1 to 10 {
+    &:nth-child(#{$i}) {
+      transform: rotate(#{randomNum(-2, 2)}deg);
+    }
+  }
+  
+  img {
+    @extend %fancy-image;
+  }
+}
+
+video {
+  width: 100%;
+  height: auto;
+  @extend %fancy-image;
+}
+
 
 /* Forms
 ------------------------------------------------- */

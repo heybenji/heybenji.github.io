@@ -1,0 +1,111 @@
+---
+layout: project
+supertitle: "Case Study"
+title: "Better event ticket editing with live preview"
+roles:
+  - Designer
+  - Front-end developer
+  - Copywriter
+  - Quality Assurance/Design Review
+thumbnail: /images/portfolio/event-tickets/event-tickets-thumbnail.png
+featured-image: /images/portfolio/event-tickets/event-tickets-editing.png
+featured-image-alt: "Screenshot depicting the ticket editing experience on ActBlue with an editor on a pane to the left of the screen, and a live preview of an ActBlue event form on the right with a list of ticket types. On the left hand side is a pane with the title ‘Edit Form’ with ‘Publish’ and ‘Cancel’ buttons implying that there are unsaved changes on the form. Below that in the left hand pane is a section with the heading ‘Ticket types', with the fields ‘Name,’ ‘Description,’ ‘Price,’ ‘Number of tickets’ set to a limit of 10, and ‘Max of this ticket type per transaction’ set to 3." 
+---
+
+<section class="project-summary">
+  <h2>
+    Summary
+  </h2>
+  
+  <ul>
+    <li>Designed and developed HTML/CSS for an all-new event ticket editing flow with live preview and inventory management on ActBlue</li>
+    <li>Established a new pattern for "editing within editing" for inline form editor</li>
+    <li>Replaced disjointed experience of bouncing between legacy form editor and new editor</li>    
+  </ul>
+</section>
+
+<section>
+  <h2>
+    Goals
+  </h2>
+  
+  <ol>
+    <li>
+      A <strong>seamless ticket editing experience</strong> within the new form editor with live preview
+    </li>
+    <li>
+      <strong>Drag and drop reordering</strong> of ticket types
+    </li>
+    <li> 
+      <strong>Archive or hide ticket types</strong>
+    </li>
+    <li>
+      <strong>Set ticket inventory</strong> for a given type
+    </li>
+    <li>
+      Easier discovery of <strong>the ability to offer a post-donation question</strong>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>
+    Background & problem
+  </h2>
+  
+  <p>
+    The initial release of the then new live-preview inline form editor, which I also designed in collaboration with two engineers, did not include ticket editing.
+  </p>
+  
+  <p>
+    <strong>As a result, the experience of editing an event required jumping back and forth in a disjointed and disorienting way from the new editing interface to the legacy interface.</strong>
+  </p>
+  
+  <p>
+    This project was part of a multi-step initiative to bring legacy functionality into the inline form editor in order to reduce technical debt, and reduce friction in the ticket editing experience.
+  </p>
+  
+  <aside>
+    <p>
+      Note: unfortunately, I was unable to find before pictures of ticket editing, but it was essentially just a couple form fields in a sea of other form fields.
+    </p>
+  </aside>
+</section>
+
+<section>
+  <h2>
+    Solution
+  </h2>
+  
+  <h3>Video walkthrough</h3>
+  
+  <video width="1270" height="859" controls>
+    <source src="{{ '/images/portfolio/event-tickets/event-tickets-walkthrough.mp4' | prepend: site.baseurl }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <p>
+    I paired closely with an engineer on this project, writing most of the HTML and CSS within the React application that drives our form editing experience.
+  </p>
+  
+  <p>
+    This interaction was important to get right because it introduced the pattern of “editing within editing” for the new form editor. This was foundational to later migrating our merchandise editing experience. Small copy decisions like using the word “Done” rather than “Save” helped maintain coherence with the global “Publish” paradigm that was already in place.
+  </p>
+  
+  <p>
+    Because changes were previewed live, an emphasis was placed on a lightweight interface that hinted at direct manipulation with cursor changes for drag-and-drop and icons with tooltips. While mobile users couldn't edit and preview at the same time, care was taken to make the drag-and-drop experience feel as natural as possible. Instead of using a heavyweight JavaScript library for drag-and-drop, I worked with the engineer to use the browser's built-in drag-and-drop API, resulting in less code and a better and more accessible experience on whatever device was being used.
+  </p>
+
+</section>
+
+<section>
+  <h2>
+    Outcomes & reflections
+  </h2>
+  
+  <p>
+    Moving ticket editing into the new form editor dramatically simplified the experience of editing tickets while introducing commonly-requested features, particularly setting inventories on ticket types and being able to reorder them. Our customer service team got lots of positive feedback about the change from event form users.
+  </p>
+  
+</section>
+    

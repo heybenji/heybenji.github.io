@@ -1,0 +1,195 @@
+---
+layout: project
+supertitle: "Case Study"
+title: "Improve two-factor security & adoption"
+roles:
+  - Designer
+  - Copywriter
+  - Quality Assurance/Design Review
+  - Front-end adjustments
+  - Email template development
+thumbnail: /images/portfolio/two-factor/two-factor-thumbnail.png
+featured-image: /images/portfolio/two-factor/ab-2fa-security-totp-enabled-switch-corner-for-portfolio-cropped.png
+featured-image-alt: "Screenshot of the 'Security' section of the ActBlue website, depicting a two-factor authentication setting being enabled with a green checkmark and a small 'Switch device' link below the status. Underneath a dividing line after the status section, a 'Backup codes' status section appears, with the status 'None' to the right of the title. A large orange button saying 'Generate backup codes' appears below that." 
+---
+
+<section class="project-summary">
+  <h2>
+    Summary
+  </h2>
+  
+  <ul>
+    <li>Designed new ActBlue account Security hub, nudges, and account action notifications</li>
+    <li>Designed complex device onboarding and switching flow for a more secure two-factor (2FA) authentication method</li>
+    <li>Navigated a variety of technical and security constraints with engineers and security specialists</li>
+    <li>Increased adoption of Time-Based One-Time Passwords (TOTP) among campaign users</li>
+    <li>Lead the development of a 2FA playbook with our Application Security Engineer and Customer Service</li>
+  </ul>
+</section>
+
+<section>
+  <h2>
+    Goals
+  </h2>
+  
+  <ol>
+    <li>
+      A <strong>clear <abbr title="Time-based One-Time Password">TOTP</abbr> upgrade or enrollment user experience</strong>
+    </li> 
+    <li>
+      The ability to <strong>easily upgrade from SMS and switch devices</strong>
+    </li>
+    <li>
+      A <strong>backup option in the case of a lost device</strong> that reduced the need for manual de-enrollment by staff
+    </li>
+    <li>
+      <strong>Establish a pattern for notifications to users</strong> of actions being taken on their account
+    </li>
+    <li>
+      <strong>Develop staff protocols that reduced our vulnerability to social engineering</strong> as a result of this new functionality
+    </li>
+    <li>
+      <strong>Elevate security as a concept</strong> within the application
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>
+    Background
+  </h2>
+
+  <p>
+    ActBlue offered SMS-based two-factor authentication at the time to <strong>campaign and organization users</strong> as well as ActBlue staff.
+  </p>
+  <p>  
+    <strong>Two-factor authentication via SMS was discovered to have significant vulnerabilities</strong> due to SMS messages not being encrypted.
+  </p>
+  <p>
+    Because security was and continues to be a foundational need and core value proposition of ActBlue, security- oriented engineers at the time felt that <strong>implementing Time-based One-Time Passwords (TOTP) was important</strong> to the security posture of ActBlue and large clients in particular.
+  </p>  
+  <p>
+    <strong>In order to migrate away from SMS-based two-factor authentication, we needed a better, more secure, and easier-to-use option.</strong>
+  </p>
+</section>
+
+<section>
+  <h2>
+    Problem
+  </h2>
+  
+  <p>Two-factor authentication enrollment involves taking <strong>multiple steps</strong> on both a primary device and another device such as a phone, <strong>resulting in significant barriers to adoption</strong>.</p>
+  
+  <h3>
+    In addition...
+  </h3>
+  
+  <ul>
+    <li>
+      In order for adoption to be achieved, <strong>upgrading must be easy and provide clear benefits without compromising the perception of existing security</strong>
+    </li>
+    <li>
+      Because TOTP codes are received on a secondary device which can be lost, <strong>a non-device emergency alternative is required</strong>
+    </li>
+    <li>
+      In order to <strong>reduce the likelihood of attackers using social engineering</strong> to pose as a beleaguered users, new ActBlue staff protocols were required before a user could de-enroll from TOTP once enrolled
+    </li>
+    <li>
+      In order to intercept potential attacks, <strong>the user needed to be notified of actions taken</strong> on their account.
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>
+    Scope &amp; constraints
+  </h2>
+  
+  <p>
+    A requirement from App Sec Engineer was <strong>no radical interface changes from existing app</strong>. People get used to an app and can be more easily tricked if they get used to it changing arbitrarily.
+  </p>
+  
+  <ol>
+    <li>
+      Match the style of existing authentication flows while <strong>introducing as few new visual elements as possible</strong>
+    </li>
+    <li>
+      <strong>Email design also needed to largely match existing transactional email design</strong> at the time
+    </li>
+    <li>
+      <strong>Alerts and validation messages were largely baked into the TOTP library we were using</strong>, so were worked-out with the engineer during design review
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>
+    Solution
+  </h2>
+  
+  <p>
+    As a result of the constraints and goals, primary design solutions involved clear flow and CTAs, clear copy, and progressive disclosure, all while remaining consistent with existing authentication flows.
+  </p>
+  
+  <h3>
+    Video walkthrough
+  </h3>
+  
+  <video width="1270" height="859" controls>
+    <source src="{{ '/images/portfolio/two-factor/two-factor-walkthrough.mp4' | prepend: site.baseurl }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <h3>
+    Security hub and alerts
+  </h3>
+  
+  <p>
+    This new authentication feature also introduced the concept within ActBlue of a "Security" hub as a top-level navigation item, and the concept of "account activity" in the form of email alerts and a "latest activity" feed.
+  </p>
+  
+  <p>
+    Email alerts for key account activity are a critical tool for keeping accounts secure by helping users identify suspicious activity on their accounts. I designed, coded, and tested the email notifications for this feature.
+  </p>
+  
+  <h3>
+    Progressive disclosure
+  </h3>
+  
+  <p>
+    As you can see in the video walk-through above, I tried to make every step as simple as possible and <strong>only show the information needed to complete the task at hand</strong>. If there was an intermediate step required of authenticating with a password or authentication code, the interface focused on that and had a single clear CTA.
+  </p>
+  
+  <p>
+    In addition, security "nudges" would appear in the main navigation displaying the next step a user could take to make their account even more secure.
+  </p> 
+  
+  <h3>
+    Importance of cross-functional collaboration
+  </h3>
+  
+  <p>
+    My design work didn't stop at how things looked or even how they worked. I collaborated closely with an engineer and security expert to make sure every edge case was covered in the clickable prototype.
+  </p>
+    
+  <p>
+    Collaboration with the Customer Service team was critical to the success of this feature. In consultation with the security expert, <strong>I worked with Customer Service to develop a "Two-Factor Authentication Playbook"</strong>. The playbook gave the CS team clear guidance on how to authenticate users who wrote or called into support, ensuring this new level of account authentication couldn't be gamed by social engineering attacks.
+  </p>
+
+</section>
+
+<section>
+  <h2>
+    Outcomes & reflections
+  </h2>
+  
+  <p>
+    <strong>Adoption increased substantially</strong> after the feature was released, as did switching from the deprecated authentication method.
+  </p>
+  
+  <p>
+    Designing for security involves a lot more constraints than blue-sky product development or even developing new features for an existing product or product area. Interface habituation is a powerful tool for enhancing security and building awareness that something is “off” when it is. Breaking that continuity can be disastrous.
+  </p>
+  
+
+</section>
