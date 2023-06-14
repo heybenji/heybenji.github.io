@@ -1,28 +1,61 @@
 ---
 layout: home
 title: "Hey, I'm Benji"
+class: home
 ---
 
   <section class="pitch">
     <h1>Hey, I’m <span class="p-name">Benji<span class="visuallyhidden"> Mauer</span></span>.</h1>
-    <p>I work at <a href="https://secure.actblue.com">ActBlue</a>
-      and have done <span class="p-category">training</span>,
-      <span class="p-category">support</span>,
-      and <a class="p-category" href="{{ '/posts/deep-design/' | prepend: site.baseurl }}">deep design</a> for rad people like
-      Neighbor to Neighbor,
+    <p>I’m an 
+      <span class="p-category">interdisciplinary</span> <span class="p-category">UX</span> <span class="p-category">leader</span> with 15+ years in <span class="p-category">nonprofit</span> and <span class="p-category">political</span> <span class="p-category">tech</span> as a <span class="p-category">designer</span>, <span class="p-category">researcher</span>, <span class="p-category">developer</span>, and <span class="p-category">entrepreneur</span>. 
+      Most recently a Senior User Researcher at ActBlue, I’ve worked with YouthBuild USA, 
       <a href="http://www.faireconomy.org/">United for a Fair Economy</a>,
       <a href="http://www.interactioninstitute.org" title="with Mark Toce">Interaction Institute for Social Change</a>,
-      Blue Cross Blue Shield of Massachusetts,
       Equal Exchange,
-      Spontaneous Celebrations,
-      <a href="http://www.ambreenbutt.com">Ambreen Butt</a>,
+      The Yes Men,
+      <a href="https://softwarefreedom.org">The Software Freedom Law Center</a>,
       Bitch Magazine,
       and others.
       I co-founded Make Shift Boston.
       I’m a card-carrying member of the <a href="http://usworker.coop">US Federation of Worker Cooperatives</a>.
-      Sometimes I share <a href="{{ '/posts/' | prepend: site.baseurl }}">my thoughts</a>.
     </p>
   </section>
+  
+  {% if site.portfolio %}
+  <section class="portfolio">
+    <h2>Case Studies</h2> 
+    
+    <ul class="projects">
+      {% for project in site.portfolio reversed %}
+      <li class="project-card">
+        <a href="{{ project.url }}">
+          <img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.thumbnail-alt }}">
+          <h3 class="project-title">
+            {{ project.title }}
+          </h3>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+  
+  <section class="thoughts">
+    <h2>Thoughts</h2>
+    
+    <ul class="posts-widget">
+      {% for page in site.posts limit:3 %}
+        <li class="posts-widget-post">
+          <h3 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+          <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+          {{ page.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+    
+    <a href="{{ '/posts/' | prepend: site.baseurl }}">See more posts</a>
+  </section>
+  
   <section class="contact">
     <h2>Contact&hellip;</h2>
     <section class="contact-points">

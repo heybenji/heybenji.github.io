@@ -1,0 +1,21 @@
+---
+layout: default
+title: Case Studies
+permalink: "/portfolio/"
+---
+<section class="portfolio">
+  <h2>Case Studies</h2>
+  
+  <ul class="projects">
+    {% for project in site.portfolio reversed %}
+    <li class="project-card">
+      <a href="{{ project.url }}">
+        <img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.thumbnail-alt }}">
+        <h3 class="project-title">
+          {{ project.title }}
+        </h3>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

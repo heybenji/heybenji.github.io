@@ -9,7 +9,9 @@ body {
 
 .pitch,
 .contact,
-.post {
+.post,
+.thoughts,
+.portfolio {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -27,6 +29,18 @@ body {
   text-align: right;
 }
 
+/* Portfolio */
+
+.post.project {
+  
+  section {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+}
+
 
 /* Wider than a phone
 ------------------------------------------------- */
@@ -38,16 +52,14 @@ body {
 
   .pitch,
   .contact,
-  .post {
+  .post,
+  .portfolio,
+  .thoughts {
     position: relative;
     width: 80%;
     max-width: 50rem;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .post {
-    max-width: 40rem;
   }
 
   .pitch {
@@ -117,36 +129,54 @@ body {
   .contact-points-info p:first-child {
     margin-top: .5rem;
   }
+  
+  /* Portfolio */
+  
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $spacing-unit*2;
+    
+    .project-card {
+      
+    }
+  }
+  
+  .post.project {
+    max-width: 60rem;
 
-  /* MailChimp form-specific layout */
-  .mc-email {
-    width: 100%;
+    section {
+      clear: both;
+      padding-left: 20rem;
+      
+      h2 {
+        float: left;
+        margin-left: -20rem;
+        width: 18rem;
+      }
+      
+    }
+  
+    .post-header {
+      float: left;
+      width: 18rem;
+    }
+    
+    .project-featured-image {
+      float: right;
+      width: calc(100% - 20rem);
+      margin-bottom: 2rem;
+    }
+  
+    
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $spacing-unit / 2;
   }
 
-  .mc-fname,
-  .mc-lname {
-    float: left;
-  }
-
-  .mc-fname {
-    width: 49%;
-    margin-right: 2%;
-  }
-
-  .mc-fname input[type=text],
-  .mc-lname input[type=text] {
-    width: 92%;
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-
-  .mc-lname {
-    width: 49%;
-  }
-
-  .mc-loc {
-    clear: both;
-  }
 }
 
 /* Taller and wider than a phone
@@ -156,16 +186,12 @@ body {
   .pitch {
     margin-top: 7rem;
   }
-
+  
 }
 
 /* Taller than a small laptop
 ------------------------------------------------- */
 @media screen and (min-width: 40rem) and (min-height: 50rem) {
-
-  .pitch {
-    margin-top: 12rem;
-  }
 
   .site-footer {
     position: fixed;
@@ -179,6 +205,17 @@ body {
 ------------------------------------------------- */
 
 @media screen and (min-width: 65rem) {
+  
+  /* Portfolio */
+  
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .project-card {
+      
+    }
+  }
 
   .site-footer {
     position: fixed;

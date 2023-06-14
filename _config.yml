@@ -2,7 +2,7 @@
 title: "Benji Mauer"
 email: hey@heybenji.co
 author: Benji Mauer
-description: I do training, support, and user experience design for rad people.
+description: "Interdisciplinary UX leader with 15+ years in nonprofit and political tech. Designer, researcher, developer, and entrepreneur."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.heybenji.co" # the base hostname & protocol for your site
 twitter_username: heybenji
@@ -27,3 +27,12 @@ markdown: kramdown
 # Minify CSS
 sass:
   style: compressed
+
+# Collections
+collections:
+  portfolio:
+    output: true
+    order:
+    - youthbuild.html
+    - two-factor.html
+    - event-tickets.html

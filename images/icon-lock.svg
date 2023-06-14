@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>lock.fill copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lock.fill-copy" fill="#000000" fill-rule="nonzero">
+            <rect id="Rectangle" opacity="0" x="0" y="0" width="13.3301" height="19.6777"></rect>
+            <path d="M2.19727,19.1602 L11.1328,19.1602 C12.5684,19.1602 13.3301,18.3789 13.3301,16.8359 L13.3301,10.1074 C13.3301,8.56445 12.5684,7.79297 11.1328,7.79297 L2.19727,7.79297 C0.761719,7.79297 0,8.56445 0,10.1074 L0,16.8359 C0,18.3789 0.761719,19.1602 2.19727,19.1602 Z M1.70898,8.54492 L3.26172,8.54492 L3.26172,5.24414 C3.26172,2.7832 4.83398,1.47461 6.66016,1.47461 C8.48633,1.47461 10.0781,2.7832 10.0781,5.24414 L10.0781,8.54492 L11.6211,8.54492 L11.6211,5.45898 C11.6211,1.78711 9.21875,0 6.66016,0 C4.11133,0 1.70898,1.78711 1.70898,5.45898 L1.70898,8.54492 Z" id="Shape" fill-opacity="0.85"></path>
+        </g>
+    </g>
+</svg>

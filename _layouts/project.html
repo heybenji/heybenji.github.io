@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<div class="post project">
+
+  <header class="post-header">
+    {% if page.supertitle %}
+    <p class="post-supertitle">{{ page.supertitle }}</p>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+ 
+    {% if page.roles %}
+    <div class="project-roles">
+    <h3>Roles:</h3>
+      
+    <ul>
+      {% for role in page.roles %}
+      <li>{{ role }}</li>
+      {% endfor %}
+    </ul>
+    </div>
+    {% endif %}
+    
+    {% if page.summary %}
+    <div class="project-summary">
+    <h3>Summary:</h3>
+    
+    <ul>
+      {% for point in page.summary %}
+      <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+    </div>
+    {% endif %}
+  </header>
+  
+  {% if page.featured-image %}
+  <img 
+    class="project-featured-image"
+    src="{{ page.featured-image | prepend: site.baseurl }}" 
+    {% if page.thumbnail-alt %}
+    alt="{{ page.featured-image-alt }}"
+    {% endif %}
+  >
+  {% endif %}  
+  
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
