@@ -255,7 +255,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (~> 228)
   jekyll
   sass
   webrick (~> 1.8)
