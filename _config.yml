@@ -36,3 +36,7 @@ collections:
     - youthbuild.html
     - two-factor.html
     - event-tickets.html
+    
+# Include specific files
+include:
+- _headers
