@@ -1,0 +1,122 @@
+﻿WEBVTT
+
+1
+00:00:00.210 --> 00:00:02.100
+<v ->Here's a quick walkthrough of the more secure</v>
+
+2
+00:00:02.100 --> 00:00:05.760
+two-factor authentication flow that I designed for ActBlue.
+
+3
+00:00:05.760 --> 00:00:09.180
+Because security was really important to get right,
+
+4
+00:00:09.180 --> 00:00:10.920
+I worked with an engineer to understand
+
+5
+00:00:10.920 --> 00:00:13.140
+every possible permutation that could come up
+
+6
+00:00:13.140 --> 00:00:17.070
+as a user was enrolling or de-enrolling their device.
+
+7
+00:00:17.070 --> 00:00:21.930
+I also designed and coded email notifications
+
+8
+00:00:21.930 --> 00:00:25.290
+that would alert users to important actions taken
+
+9
+00:00:25.290 --> 00:00:26.140
+on their account.
+
+10
+00:00:27.930 --> 00:00:29.040
+In addition to that,
+
+11
+00:00:29.040 --> 00:00:34.040
+I introduced a security menu item to the global navigation,
+
+12
+00:00:35.730 --> 00:00:39.600
+and nudges to help folks know the next action
+
+13
+00:00:39.600 --> 00:00:41.370
+that they could take to improve the security
+
+14
+00:00:41.370 --> 00:00:42.220
+of their account.
+
+15
+00:00:43.650 --> 00:00:46.290
+Let's take a quick look at the clickable prototype
+
+16
+00:00:46.290 --> 00:00:49.683
+and go through the setup flow.
+
+17
+00:00:52.080 --> 00:00:55.983
+So first folks would set up stronger authentication.
+
+18
+00:00:57.000 --> 00:01:01.203
+They'd download their app, scan it, and enter it.
+
+19
+00:01:02.550 --> 00:01:04.350
+And that's basically it.
+
+20
+00:01:04.350 --> 00:01:06.300
+They'd be enabled.
+
+21
+00:01:06.300 --> 00:01:08.830
+They could also generate backup codes
+
+22
+00:01:10.470 --> 00:01:12.690
+in case they lost their device.
+
+23
+00:01:12.690 --> 00:01:15.640
+In that case they need to verify their password to continue
+
+24
+00:01:16.800 --> 00:01:18.630
+and then they'd get their backup codes
+
+25
+00:01:18.630 --> 00:01:21.510
+to either download or copy to their device,
+
+26
+00:01:21.510 --> 00:01:23.130
+and they could also hide those codes
+
+27
+00:01:23.130 --> 00:01:26.220
+after they were doing it to prevent shoulder surfing.
+
+28
+00:01:26.220 --> 00:01:29.610
+Finally, they'd see in their latest activity
+
+29
+00:01:29.610 --> 00:01:32.850
+all the important account related actions
+
+30
+00:01:32.850 --> 00:01:34.323
+that they had taken recently.
+

@@ -136,7 +136,15 @@ featured-image-alt: "Screenshot of the 'Security' section of the ActBlue website
   </h3>
   
   <video width="1270" height="859" controls>
-    <source src="{{ '/images/portfolio/two-factor/two-factor-walkthrough.mp4' | prepend: site.baseurl }}" type="video/mp4">
+    <source 
+      src="{{ '/images/portfolio/two-factor/two-factor-walkthrough.mp4' | prepend: site.baseurl }}" 
+      type="video/mp4">
+    <track
+      label="English"
+      kind="subtitles"
+      srclang="en"
+      src="{{ '/images/portfolio/two-factor/two-factor-walkthrough.vtt' | prepend: site.baseurl }}"
+      default>
     Your browser does not support the video tag.
   </video>
   

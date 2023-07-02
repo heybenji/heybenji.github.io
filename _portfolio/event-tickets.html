@@ -80,7 +80,15 @@ featured-image-alt: "Screenshot depicting the ticket editing experience on ActBl
   <h3>Video walkthrough</h3>
   
   <video width="1270" height="859" controls>
-    <source src="{{ '/images/portfolio/event-tickets/event-tickets-walkthrough.mp4' | prepend: site.baseurl }}" type="video/mp4">
+    <source 
+      src="{{ '/images/portfolio/event-tickets/event-tickets-walkthrough.mp4' | prepend: site.baseurl }}"
+      type="video/mp4">
+    <track
+      label="English"
+      kind="subtitles"
+      srclang="en"
+      src="{{ '/images/portfolio/event-tickets/event-tickets-walkthrough.vtt' | prepend: site.baseurl }}"
+      default>
     Your browser does not support the video tag.
   </video>
   
