@@ -84,6 +84,11 @@ td {
   }
 }
 
+%small-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 a {
   color: $benji-blue-accessible;
   text-decoration: none;
@@ -118,8 +123,7 @@ figure {
 
 figcaption {
   margin-top: .5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  @extend %small-text;
 }
 
 a:hover,
@@ -135,6 +139,10 @@ a:active {
 img {
   width: 100%;
   height: auto;
+}
+
+.note {
+  @extend %small-text;
 }
 
 /* Branding
@@ -272,7 +280,7 @@ img {
   .post-supertitle {
     text-transform: uppercase;
     margin-bottom: .5rem;
-    font-size: 0.875rem;
+    @extend %small-text;
   }
   
   .post-meta {
@@ -317,6 +325,10 @@ img {
 .projects {
   
   
+}
+
+.portfolio .note {
+  margin-top: 2rem;
 }
 
 .project-card {
