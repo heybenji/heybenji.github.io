@@ -338,7 +338,7 @@ img {
     border-bottom: none;
   }
   
-  a::before {
+  &.card-locked a::before {
     content: url("/images/icon-lock-reverse.svg");
     width: 14px;
     height: 20px;

@@ -8,8 +8,8 @@ permalink: "/portfolio/"
   
   <ul class="projects">
     {% for project in site.portfolio reversed %}
-    <li class="project-card">
-      <a href="{{ project.url }}">
+    <li class="project-card {% if project.locked == true %}card-locked{% endif %}">
+      <a href="{{ project.url }}" aria-label="View case study: {{ project.title }}{% if project.locked == true %}. This case study is locked. Please email {{ site.email }} for credentials.{% endif %}">
         <img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.thumbnail-alt }}">
         <h3 class="project-title">
           {{ project.title }}
@@ -18,4 +18,8 @@ permalink: "/portfolio/"
     </li>
     {% endfor %}
   </ul>
+  
+  <p class="note">
+    <em>Note:</em> If you’d like to view locked case studies, please <a href="mailto: {{ site.email }}" title="Send an email to {{ site.email }}">email me</a>.
+  </p>
 </section>
